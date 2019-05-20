@@ -88,7 +88,7 @@
                                 </ul>
                             </div> <!-- navbar collapse -->
                             <div class="navbar-btn d-none d-sm-block">
-                                <a class="main-btn" href="#">CONTACT US</a>
+                                <a class="main-btn page-scroll" href="#contact">CONTACT US</a>
                             </div>
                         </nav> <!-- navbar -->
                     </div>
@@ -381,11 +381,13 @@
                     </div> <!-- tab content -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center" style="margin-top: 70px;">
+
+            
+            <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="section-title text-center pb-10">
-                        <h5>Multi-Currency Support</h5>
                         <h2 class="title">Locations of payments accepted</h2>
+                        <h5 style="color: #FF15F3; margin-top: 30px;">Multi-Currency Support</h5>
                         <div class="nav flex-column services-content mt-50" id="v-pills-tab" role="tablist"
                             aria-orientation="vertical">
                             <a class="active" id="v-pills-application-tab" data-toggle="pill"
@@ -440,18 +442,43 @@
                         </div> <!-- nav -->
                     </div> <!-- section -title -->
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-        <div class="services-woman">
+            </div>
+        </div>
+        <!-- <div class="services-woman">
             <img data-aos="fade-left" data-aos-duration="1000" src="assets/images/svg/services-woman.png" alt="Woman">
-        </div> <!-- services woman -->
+        </div>  -->
     </section>
+
+    <div class="container-fluid" style="background: #191919; padding-top: 80px; padding-bottom: 80px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="left-container col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div style="width: 100px; margin: auto;">
+                        <img class="animation1" src="assets/images/tarjeta.png" width="100px" height="100px">
+                    </div>
+                    <h2 style="text-align: center; color: white; font-weight: 300; border-bottom: 1px solid white; margin-bottom: 20px;padding-bottom: 20px; font-size: 25px; margin-top: 40px;">Recurring
+                        Billing</h2>
+                    <p style="text-align: center; color: white; font-weight: 300;">Bill customers, charge cards and
+                        process payments securely on a scheduled, automatic basis.</p>
+                </div>
+                <div class="left-container col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                    <div style="width: 100px; margin: auto;">
+                        <img class="animation1" src="assets/images/sale.png" width="100px" height="100px">
+                    </div>
+                    <h2 style="text-align: center; color: white; font-weight: 300; border-bottom: 1px solid white; margin-bottom: 20px;padding-bottom: 20px; font-size: 25px; margin-top: 40px;">Hosted Pay Page
+                    </h2>
+                    <p style="text-align: center; color: white; font-weight: 300;">Sell your products online quickly and
+                        securely through our hosted pay page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--====== SERVICES PART ENDS ======-->
 
     <!--====== VIDEO PART START ======-->
 
-    <section id="video" class="video-area bg_cover" style="background-image: url('assets/images/video-bg.jpg')">
+    <!-- <section id="video" class="video-area bg_cover" style="background-image: url('assets/images/video-bg.jpg')">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-lg-7">
@@ -462,10 +489,10 @@
                             tend to repeat predefined chunks as necessary, making this the first true generator, Lorem
                             ipsum dolor sit amet consectetur adipicing.</p>
                         <a href="#">Read more about us <i class="fa fa-angle-right"></i></a>
-                    </div> <!-- video content -->
+                    </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
+            </div>
+        </div>
         <div class="video-woman" data-aos="fade-left" data-aos-duration="1000">
             <img src="assets/images/svg/video.png" alt="Shape">
         </div>
@@ -475,75 +502,51 @@
                 <a class="video-popup" href="https://www.youtube.com/watch?v=TcMBFSGVi1c&amp;t=70s">Play</a>
             </div>
         </div>
-    </section>
+    </section>  -->
 
     <!--====== VIDEO PART ENDS ======-->
 
     <!--====== CONATCT PART START ======-->
 
-    <section id="contact" class="contact-area pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title section-title-2 text-center pb-30">
-                        <h5 class="sub-title">contact us</h5>
-                        <h2 class="title">Get In Touch</h2>
-                    </div> <!-- section -title -->
-                </div>
-            </div> <!-- row -->
+    <section id="contact" class="section" data-bg="black" data-offset="-75" data-trigger-hook="0" data-duration=".2" style=" margin: 0; padding: 0; background: #191919;">
+            <div class="container-fluid" style="padding-top: 30px; border-top: 1px solid #00DEFF;">
+                <h1 style="color: white; padding-top: 100px; text-align: center;">Contact Us</h1>
+                <form id="myform" method="post" name="contact_form" action="contact-form-handler.php">
+                    <fieldset>
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8 col-sm-8">
+                                <input class="w-100 p-2 name-field" type="text" tabindex="1" id="name" name="name" value="" placeholder="NAME" style="backgrund: transparent;">
+                                <div class="text-right text-danger p-2 field_required_1"></div>
+                            </div>
+                        </div>
 
-            <div class="contact-form">
-                <form id="contact-form" action="assets/contact.php.html" method="post" data-toggle="validator">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="single-contact-form form-group">
-                                <input type="text" name="name" placeholder="Enter Your Name"
-                                    data-error="Name is required." required="required">
-                                <div class="help-block with-errors"></div>
-                            </div> <!-- single contact form -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8 col-sm-8">
+                                <input class="w-100 p-2" type="text" tabindex="2" id="email" name="email" value="" placeholder="EMAIL">
+                                <div class="text-right text-danger p-2 field_required_1"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="single-contact-form form-group">
-                                <input type="email" name="email" placeholder="Enter Your Email"
-                                    data-error="Valid email is required." required="required">
-                                <div class="help-block with-errors"></div>
-                            </div> <!-- single contact form -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8 col-sm-8">
+                                <input class="w-100 p-2" type="text" tabindex="3" id="phone" name="phone" value="" placeholder="PHONE">
+                                <div class="text-right text-danger p-2 field_required_1"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="single-contact-form form-group">
-                                <input type="text" name="number" placeholder="Your Phone Number"
-                                    data-error="Phone is required." required="required">
-                                <div class="help-block with-errors"></div>
-                            </div> <!-- single contact form -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8 col-sm-8">
+                                <textarea class="w-100 p-2" id="message" name="message" tabindex="5" cols="40" rows="5" placeholder="MESSAGE"></textarea>
+                                <div class="text-right align-text-top text-danger p-2 field_required_2"></div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="single-contact-form form-group">
-                                <input type="text" name="subject" placeholder="Your Subject"
-                                    data-error="Subject is required." required="required">
-                                <div class="help-block with-errors"></div>
-                            </div> <!-- single contact form -->
+                        <div class="row justify-content-center my-4">
+                            <div class="col-md-8 col-sm-8 text-center">
+                                <input type="submit" value="SUBMIT" id="submit" name="submit">
+                            </div>
                         </div>
-                        <div class="col-lg-12">
-                            <div class="single-contact-form form-group">
-                                <textarea name="message" placeholder="Write Your Message"
-                                    data-error="Please,leave us a message." required="required"></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div> <!-- single contact form -->
-                        </div>
-                        <p class="form-message"></p>
-                        <div class="col-lg-12">
-                            <div class="single-contact-form text-center">
-                                <button type="submit" class="main-btn main-btn-2">Send Message</button>
-                            </div> <!-- single contact form -->
-                        </div>
-                    </div> <!-- row -->
+                    </fieldset>
                 </form>
-            </div> <!-- contact form -->
-        </div> <!-- container -->
-        <div class="contact-woman" data-aos="fade-left" data-aos-duration="1000">
-            <img src="assets/images/svg/contact.png" alt="Woman">
-        </div>
-    </section>
+            </div>
+        </section>
 
     <!--====== CONATCT PART ENDS ======-->
 
@@ -568,15 +571,15 @@
                                 <h4 class="title">Our Company</h4>
                             </div>
                             <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i> About Company </a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i> Our Testimonials</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i> Latest News</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i> Our Mission</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i> Get a Free Quote</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>About Us</a></li>
+                                <li><a href="sponsorpolicy.html"><i class="fa fa-angle-right"></i>Sponsor Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Refund Policy</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Cookie Policy</a></li>
+
                             </ul>
                         </div> <!-- widget link -->
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 order-md-3 order-lg-2">
+                    <!-- <div class="col-lg-3 col-md-6 col-sm-6 order-md-3 order-lg-2">
                         <div class="widget-link pt-45">
                             <div class="widget-title pb-20">
                                 <h4 class="title">Our Services</h4>
@@ -588,21 +591,18 @@
                                 <li><a href="#"><i class="fa fa-angle-right"></i> App Development</a></li>
                                 <li><a href="#"><i class="fa fa-angle-right"></i> Print Design</a></li>
                             </ul>
-                        </div> <!-- widget link -->
-                    </div>
+                        </div> 
+                    </div> -->
                     <div class="col-lg-3 col-md-6 col-sm-12 order-md-1 order-lg-3">
                         <div class="widget-contact pt-45">
                             <div class="widget-title pb-20">
                                 <h4 class="title">Contact Us</h4>
                             </div>
                             <div class="widget-info">
-                                <p><span>Location:</span> 2750 Quadra Street Victoria, Canada</p>
-                                <p><span>Email:</span>info@induxtro.com</p>
-                                <p><span>Phone:</span>+324-9442-515</p>
+                                <p><span>Email:</span>info@reconikinc.com</p>
                                 <ul class="social mt-30">
-                                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.facebook.com/Reconik-Inc-367672993826829/"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.instagram.com/reconikinc/"><i class="fa fa-instagram"></i></a></li>
                                 </ul>
                             </div>
                         </div> <!-- widget link -->
@@ -615,7 +615,7 @@
                 <div class="row">
                     <div class="col-md-5">
                         <div class="copyright pt-15 text-center text-md-left">
-                            <p>BizTo © 2019 All Right Reserved</p>
+                            <p>Copyright 2019 reconikinc.com All rights reserved.</p>
                         </div> <!--  copyright -->
                     </div>
                     <div class="col-md-7">
@@ -623,7 +623,6 @@
                             <ul>
                                 <li><a href="#">Terms & Condition</a></li>
                                 <li><a href="#">Privacy Policy </a></li>
-                                <li><a href="#">Help</a></li>
                             </ul>
                         </div> <!-- copyright menu -->
                     </div>
